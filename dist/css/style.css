@@ -11,11 +11,15 @@ body {
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.593)), url("../../assets/img/hero-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.593)) ,url("../../assets/img/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+footer{
+    margin-top: 5%;
 }
 
 .container {
@@ -75,7 +79,7 @@ header {
     width: 100%;
     align-items: center;
     display: flex;
-    min-height: 100vh;
+    min-height: 120vh;
 }
 
 .hero .container .box-hero .box h1 {
@@ -83,7 +87,7 @@ header {
     color: burlywood;
     font-size: 72px;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 
@@ -103,6 +107,7 @@ header {
 .hero .container .box-hero .box button:hover {
     background-color: coral;
     transition: all .3s ease;
+    cursor: pointer;
 }
 
 .service {
@@ -110,6 +115,7 @@ header {
     min-height: 50vh;
     display: flex;
     align-items: center;
+    padding: 100px 0 50px 0;
 }
 
 .service  .container .box-service {
@@ -125,11 +131,109 @@ header {
     color: #fff;
 }
 
+.service .container .box-service .box i{
+    color: coral;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
 .service .container .box-service .box p{
     font-weight: 100;
 }
 
-.about .intro {
+.tahap .container .box-tahap {
+    display: grid;
+    grid-template-columns: repeat(autofit,minmax(300px,1fr));
+    gap: 20px;
+    row-gap: 50px;
+}
+
+.tahap .container .box-tahap h2{
+    font-size: 75px;
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+}
+
+.tahap .container .box-tahap .box p{
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.tahap .container .box-tahap .box{
+    text-align: center;
+    color: #fff;
+}
+
+.tahap .container .box-tahap .box img{
+width: 75%;
+height: 200px;
+display:inline;
+}
+
+.tahap .container .box-tahap .box button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: coral;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.tahap .container .box-tahap .box button:hover{
+    background-color: white;
+    color: black;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 50px 0 50px 0;
+    background-color: coral;
+}
+
+.footer .box-footer{
+    display: grid;
+    grid-template-columns: 2fr auto 1fr;
+    column-gap: 100px;
+    align-items: center;
+}
+
+.footer .box-footer .box{
+    color: #fff;
+}
+
+.footer .box-footer .box:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer .box-footer .box:nth-child(2){
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+}
+
+.footer .box-footer .box p{
+    font-weight: 200;
+}
+
+.footer .box-footer .box:nth-child(1) p{
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 10px;
+}
+
+.footer .box-footer .box:nth-child(3){
+    text-align: center;
+}
+
+.footer .box-footer .box:nth-child(3) span{
+    font-weight: bold;
+}
+
+/* .about .intro {
 border-style: none;
 color: #fff;
 display: flex;
@@ -144,5 +248,5 @@ background-color: black;
 
 .about .intro td{
     justify-content: space-between;
-}
+} */
 
