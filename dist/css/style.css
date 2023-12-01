@@ -11,14 +11,15 @@ body {
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.593)) ,url("../../assets/img/hero-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.593)), url("../../assets/img/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-footer{
+
+footer {
     margin-top: 5%;
 }
 
@@ -29,8 +30,9 @@ footer{
 
 .navbar {
     padding: 20px 0 20px 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
+    backdrop-filter: blur(10px);
 }
 
 .navbar .box-navbar {
@@ -67,6 +69,8 @@ footer{
     background-color: coral;
     transition: all .3s ease;
 }
+
+
 
 .menu-bar {
     color: #fff;
@@ -118,11 +122,26 @@ footer{
     padding: 100px 0 50px 0;
 }
 
-.service  .container .box-service {
+.service .container h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10%;
+}
+
+.service .container .box-service {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     row-gap: 50px;
+}
+
+.service .container .box-service h1 {
+    margin-left: 50vh;
+    margin-right: 50vh;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
 }
 
 .service .container .box-service .box {
@@ -131,47 +150,50 @@ footer{
     color: #fff;
 }
 
-.service .container .box-service .box i{
+.service .container .box-service .box i {
     color: coral;
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
-.service .container .box-service .box p{
-    font-weight: 100;
+.service .container .box-service .box p {
+    font-weight: 200;
+    text-align: justify;
 }
 
 .tahap .container .box-tahap {
     display: grid;
-    grid-template-columns: repeat(autofit,minmax(300px,1fr));
+    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
     gap: 20px;
     row-gap: 50px;
 }
 
-.tahap .container .box-tahap h2{
+.tahap .container .box-tahap h2 {
     font-size: 75px;
     text-align: center;
     font-weight: 300;
     color: #fff;
+    margin-top: 15%;
 }
 
-.tahap .container .box-tahap .box p{
-    font-weight: 200;
+.tahap .container .box-tahap .box p {
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
-.tahap .container .box-tahap .box{
+.tahap .container .box-tahap .box {
     text-align: center;
     color: #fff;
+    text-wrap: 10px;
 }
 
-.tahap .container .box-tahap .box img{
-width: 75%;
-height: 200px;
-display:inline;
+.tahap .container .box-tahap .box img {
+    width: 604px;
+    height: 453px;
+    display: inline;
 }
 
-.tahap .container .box-tahap .box button{
+.tahap .container .box-tahap .box button {
     width: 100px;
     height: 30px;
     border: none;
@@ -180,73 +202,250 @@ display:inline;
     border-radius: 3px;
 }
 
-.tahap .container .box-tahap .box button:hover{
+.tahap .container .box-tahap .box button:hover {
     background-color: white;
     color: black;
     transition: all .3s ease;
     cursor: pointer;
 }
 
-.footer{
+.footer {
     padding: 50px 0 50px 0;
     background-color: coral;
 }
 
-.footer .box-footer{
+.footer .box-footer {
     display: grid;
     grid-template-columns: 2fr auto 1fr;
     column-gap: 100px;
     align-items: center;
 }
 
-.footer .box-footer .box{
+.footer .box-footer .box {
     color: #fff;
 }
 
-.footer .box-footer .box:nth-child(2){
+.footer .box-footer .box:nth-child(2) {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-.footer .box-footer .box:nth-child(2){
+.footer .box-footer .box:nth-child(2) {
     text-decoration: none;
     color: #fff;
     font-weight: 200;
 }
 
-.footer .box-footer .box p{
+.footer .box-footer .box p {
     font-weight: 200;
 }
 
-.footer .box-footer .box:nth-child(1) p{
+.footer .box-footer .box:nth-child(1) p {
     font-size: 14px;
     line-height: 2;
     margin-top: 10px;
 }
 
-.footer .box-footer .box:nth-child(3){
+.footer .box-footer .box:nth-child(3) {
     text-align: center;
 }
 
-.footer .box-footer .box:nth-child(3) span{
+.footer .box-footer .box:nth-child(3) span {
     font-weight: bold;
 }
 
-/* .about .intro {
-border-style: none;
-color: #fff;
-display: flex;
-background-color: black;
+.about .intro {
+    border-style: none;
+    color: #fff;
 }
 
-.about .intro td{
-    align-items: centerl8;
-
-
+section {
+    padding: 64px 128px;
+    background-color: black;
 }
 
-.about .intro td{
+.about {
+    padding-top: 50px;
+}
+
+.about h3 {
+    color: #fff;
+}
+
+.intro {
+    display: flex;
     justify-content: space-between;
-} */
+    margin-right: 25vh;
+}
 
+.daftar {
+    padding: 50px 0 50px;
+}
+
+.daftar .container h2 {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 5%;
+}
+
+.daftar .box-matter {
+    display: flex;
+    color: #fff;
+    gap: 20px;
+}
+
+.daftar .container .box-matter .box p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.daftar .box-matter img {
+    width: 336px;
+    height: 280px;
+}
+
+.daftar .box-matter button {
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: coral;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.daftar .box-matter button:hover {
+    cursor: pointer;
+    transition: all .3s ease;
+    background-color: #fff;
+    color: #080b0c;
+}
+
+/* ABOUT.html */
+
+
+.about {
+    max-width: 600px;
+    padding-bottom: 20%;
+}
+
+.about h3 {
+    margin-right: 5%;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(235, 235, 255)
+}
+
+.about h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    color: #fff;
+}
+
+span {
+    color: coral;
+}
+
+
+.img-intro {
+    position: absolute;
+    top: 25%;
+    right: 100px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* LOgin page */
+
+body {
+    background: #080b0c;
+    font-family: 'Poppins' ;
+}
+
+.login {
+    width: 400px;
+    margin: 16px auto;
+    font-size: 16px;
+    padding-top: 10%;
+}
+
+.login-header,
+.login p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.login-header {
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.login-container {
+    background: #888;
+    padding: 12px;
+}
+
+
+.login p {
+    padding: 12px;
+}
+
+.login input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+    background: #fff;
+    border-color: #bbb;
+    color: #555;
+}
+
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+    border-color: #888;
+}
+
+.login input[type="submit"] {
+    background: coral;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+    background: coral;
+}
+
+
+.login input[type="submit"]:focus {
+    border-color: coral;
+}
